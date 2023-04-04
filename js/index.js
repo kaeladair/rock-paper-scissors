@@ -10,32 +10,32 @@ function getComputerChoice() {
 function playRound(playerSelection, computerSelection) {
 
     if (playerSelection === computerSelection) {
-        console.log("It's a tie!");
+        alert("It's a tie!");
         return 0;
     }
 
     if (playerSelection === "Rock") {
         if (computerSelection === "Paper") {
-            console.log( "You Lose! Paper beats Rock.");
+            alert( "You Lose! Paper beats Rock.");
             return 1;
         } else if (computerSelection === "Scissors") {
-            console.log( "You Win! Rock beats Scissors");
+            alert( "You Win! Rock beats Scissors");
             return 2;
         }
     } else if (playerSelection === "Paper") {
         if (computerSelection === "Rock") {
-            console.log( "You Win! Paper beats Rock!");
+            alert( "You Win! Paper beats Rock!");
             return 2;
         } else if (computerSelection === "Scissors") {
-            console.log("You Lose! Scissors beats Paper.");
+            alert("You Lose! Scissors beats Paper.");
             return 1;
         }
     } else {
         if (computerSelection === "Paper") {
-            console.log("You Win! Scissors beats Paper.");
+            alert("You Win! Scissors beats Paper.");
             return 2;
         } else if (computerSelection === "Rock") {
-            console.log("You Lose! Rock beats Scissors");
+            alert("You Lose! Rock beats Scissors");
             return 1;
         }
     }
@@ -55,8 +55,8 @@ function game() {
     }
 
     if (playerScore >= 3) {
-        console.log("You win this game!");
+        alert("You win this game!");
     } else {
-        console.log("You lost this game.");
+        alert("You lost this game.");
     }
 }
