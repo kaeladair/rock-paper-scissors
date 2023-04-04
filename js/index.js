@@ -8,27 +8,55 @@ function getComputerChoice() {
 
 // Play a single round of rock, paper, scissors
 function playRound(playerSelection, computerSelection) {
-    if (playerSelection === computerSelection){
-        return "It's a tie!";
+
+    if (playerSelection === computerSelection) {
+        console.log("It's a tie!");
+        return 0;
     }
 
-    if (playerSelection === "Rock"){
-        if (computerSelection === "Paper"){
-            return "You Lose! Paper beats Rock.";
-        } else if (computerSelection === "Scissors"){
-            return "You Win! Rock beats Scissors";
+    if (playerSelection === "Rock") {
+        if (computerSelection === "Paper") {
+            console.log( "You Lose! Paper beats Rock.");
+            return 1;
+        } else if (computerSelection === "Scissors") {
+            console.log( "You Win! Rock beats Scissors");
+            return 2;
         }
-    } else if (playerSelection === "Paper"){
-        if (computerSelection === "Rock"){
-            return "You Win! Paper beats Rock!";
-        } else if (computerSelection === "Scissors"){
-            return "You Lose! Scissors beats Paper.";
+    } else if (playerSelection === "Paper") {
+        if (computerSelection === "Rock") {
+            console.log( "You Win! Paper beats Rock!");
+            return 2;
+        } else if (computerSelection === "Scissors") {
+            console.log("You Lose! Scissors beats Paper.");
+            return 1;
         }
     } else {
-        if (computerSelection === "Paper"){
-            return "You Win! Scissors beats Paper.";
-        } else if (computerSelection === "Rock"){
-            return "You Lose! Rock beats Scissors";
+        if (computerSelection === "Paper") {
+            console.log("You Win! Scissors beats Paper.");
+            return 2;
+        } else if (computerSelection === "Rock") {
+            console.log("You Lose! Rock beats Scissors");
+            return 1;
         }
+    }
+}
+
+// Plays a game of five rounds and keeps a score
+function game() {
+    let playerScore = 0;
+
+    for (let i = 0; i < 5; i++) {
+        let playerSelection = window.prompt("Enter your choice! (Rock, Paper, Scissors):");
+        let computerSelection = getComputerChoice();
+        let result = playRound(playerSelection, computerSelection);
+        if (result === 2) {
+            playerScore += 1;
+        }
+    }
+
+    if (playerScore >= 3) {
+        console.log("You win this game!");
+    } else {
+        console.log("You lost this game.");
     }
 }
