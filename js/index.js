@@ -41,22 +41,4 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-// Plays a game of five rounds and keeps a score
-function game() {
-    let playerScore = 0;
 
-    for (let i = 0; i < 5; i++) {
-        let playerSelection = window.prompt("Enter your choice! (Rock, Paper, Scissors):");
-        let computerSelection = getComputerChoice();
-        let result = playRound(playerSelection, computerSelection);
-        if (result === 2) {
-            playerScore += 1;
-        }
-    }
-
-    if (playerScore >= 3) {
-        alert("You win this game!");
-    } else {
-        alert("You lost this game.");
-    }
-}
