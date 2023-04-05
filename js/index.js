@@ -41,4 +41,22 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
+const btn_rock = document.querySelector('#btn-rock');
+const btn_paper = document.querySelector('#btn-paper');
+const btn_scissors = document.querySelector('#btn-scissors');
+
+btn_rock.addEventListener('click', () => {
+  playRound("Rock", getComputerChoice());
+});
+
+btn_paper.addEventListener('click', () => {
+  playRound("Paper", getComputerChoice());
+});
+
+btn_scissors.addEventListener('click', () => {
+  playRound("Scissors", getComputerChoice());
+});
+
+
+    
 
