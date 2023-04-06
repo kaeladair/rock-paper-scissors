@@ -59,6 +59,5 @@ btn_scissors.addEventListener('click', () => {
   playRound("Scissors", getComputerChoice());
 });
 
-
     
 
