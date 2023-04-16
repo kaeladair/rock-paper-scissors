@@ -35,7 +35,7 @@
     border: 0px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition: 0.7s;
+    transition: 0.5s;
 }
 
 #btn-paper {
@@ -46,7 +46,7 @@
     border: 0px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition: 0.7s;
+    transition: 0.5s;
 }
 
 #btn-scissors {
@@ -57,22 +57,22 @@
     border: 0px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition: 0.7s;
+    transition: 0.5s;
 }
 
 #btn-rock:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    transition: 0.7s;
+    transition: 0.5s;
 }
 
 #btn-paper:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    transition: 0.7s;
+    transition: 0.5s;
 }
 
 #btn-scissors:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    transition: 0.7s;
+    transition: 0.5s;
 }
 
 .scores {
